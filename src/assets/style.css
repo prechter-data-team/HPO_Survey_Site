@@ -1,0 +1,724 @@
+/* Michigan logo header - stretched to full width */
+/* Option 1: Combine into one unified header */
+.michigan-logo {
+    max-width: 600px;
+    width: calc(100% - 40px);
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Add small bottom margin */
+    border-radius: 20px;
+    padding: 25px 35px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Merge the header content into the same section */
+.header {
+    background: transparent; /* Remove separate background */
+    padding: 0 20px 40px 20px; /* Only bottom padding */
+    text-align: center;
+    margin: 0;
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove separate shadow */
+}
+
+.header h1 {
+    color: #FFCB05 !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    color: rgba(255, 203, 5, 0.9) !important;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .michigan-logo {
+        width: calc(100% - 20px); /* Adjust for mobile padding */
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 12px;
+    }
+    
+    .michigan-logo-header {
+        padding: 10px;
+    }
+}
+/* Update container to match the logo border style */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Add some margin from body edges */
+    background: white;
+    border-radius: 12px; /* Match the logo border radius */
+    border: 3px solid white; /* Match the logo border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Match the logo shadow */
+    overflow: hidden;
+}
+
+/* Update body padding to accommodate the new margins */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #00274C;
+    min-height: 100vh;
+    padding: 10px 20px 20px 20px; /* Reduced top padding */
+    margin: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.header {
+    background: #00274C; /* Solid Michigan Blue */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.survey-content {
+    padding: 40px;
+}
+
+.welcome-screen, .term-screen, .completion-screen {
+    display: none;
+}
+
+.welcome-screen.active, .term-screen.active, .completion-screen.active {
+    display: block;
+}
+
+.contributor-select {
+    margin-bottom: 30px;
+}
+
+.contributor-select label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.contributor-dropdown {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+.contributor-dropdown:focus {
+    outline: none;
+    border-color: #00274C; /* Michigan Blue */
+}
+
+.term-info {
+    background: #f8fafc;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #00274C; /* Michigan Blue */
+    line-height: 1.6; /* Better line spacing */
+}
+
+.term-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.term-details {
+    display: grid;
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #4a5568;
+    min-width: 100px;
+}
+
+.detail-value {
+    color: #2d3748;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.agreement-section {
+    margin-bottom: 30px;
+}
+
+.agreement-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    padding: 20px;
+    background: #f7fafc;
+    border-radius: 10px;
+    border-left: 4px solid #00274C; /* Michigan Blue */
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    justify-content: center;
+}
+
+.radio-option:hover {
+    border-color: #00274C; /* Michigan Blue */
+    background: #f8fafc;
+}
+
+.radio-option.selected {
+    border-color: #00274C; /* Michigan Blue */
+    background: #00274C; /* Michigan Blue */
+    color: white;
+}
+
+.radio-option input {
+    margin: 0;
+}
+
+.btn {
+    background: #00274C; /* Solid Michigan Blue */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    min-width: 120px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.progress-bar {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #00274C; /* Solid Michigan Blue */
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+    width: 0%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #00274C; /* Michigan Blue */
+}
+
+.error {
+    background: #fed7d7;
+    color: #c53030;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.success {
+    background: #c6f6d5;
+    color: #276749;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.completion-message {
+    text-align: center;
+    padding: 40px;
+}
+
+.completion-message h2 {
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.completion-message p {
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+/* Hierarchical Progress Bar Styles */
+.term-progress {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.term-progress ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.term-progress ul ul {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+.term-progress li {
+    padding: 3px 0;
+    cursor: default;
+}
+
+.term-progress li.active {
+    font-weight: bold;
+    color: #00274C; /* Michigan Blue for active term */
+}
+
+.term-progress li.error {
+    color: #d9534f; /* Error state */
+    font-weight: bold;
+}
+
+/* Star Rating */
+.stars {
+    display: inline-block;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.stars span {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.stars span.filled {
+    color: #FFD700;
+}
+
+.rating-section {
+    margin: 20px 0;
+}
+
+.info-box {
+    background: #eef6ff;
+    border: 1px solid #bcdcff;
+    color: #1e3a8a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.info-box, .success-box {
+    display: none; /* Hidden by default */
+}
+
+.info-box.visible, .success-box.visible {
+    display: block; /* Show when .visible is added */
+}
+
+.success-box {
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.feedback-section {
+    margin: 20px 0;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.review-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.review-sidebar {
+    width: 240px;
+    background-color: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.review-sidebar h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.review-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.review-sidebar li {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, font-weight 0.2s;
+    color: #2d3748;
+}
+
+.review-sidebar li:hover,
+.review-sidebar li.selected {
+    background-color: #edf2f7;
+    font-weight: 600;
+}
+
+.review-content {
+    flex-grow: 1;
+    padding: 32px;
+}
+
+.rating-line {
+    margin-bottom: 24px;
+}
+
+.rating-line label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2d3748;
+}
+
+.feedback-section label {
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+    color: #4a5568;
+}
+
+.feedback-section textarea {
+    margin-top: 6px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 5px 0 15px;
+}
+
+.stars span {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.stars span.filled {
+    color: #FFD700;
+}
+
+.rating-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 15px;
+    background-color: #f9fafb;
+}
+
+.save-btn {
+    background: #00274C; /* Solid Michigan Blue */
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    background: #003366; /* Slightly lighter blue on hover */
+}
+
+/* Layout fixes to prevent content cutoff */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.survey-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.review-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+.review-sidebar {
+    flex: 0 0 250px; /* Fixed width sidebar */
+    min-width: 250px;
+    max-width: 250px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.review-content {
+    flex: 1; /* Take remaining space */
+    min-width: 0; /* Allow shrinking */
+    background: white;
+    border-radius: 8px;
+    padding: 0; /* Remove padding here since it's added in JS */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+/* Sidebar styling */
+#termSelectList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#termSelectList li {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+#termSelectList li:hover {
+    background-color: #e9ecef;
+}
+
+#termSelectList li a {
+    color: #333;
+    text-decoration: none !important;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .review-sidebar {
+        flex: none;
+        min-width: auto;
+        max-width: none;
+        max-height: 200px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Ensure buttons are properly styled - Override for Michigan colors */
+.btn {
+    background: #00274C; /* Solid Michigan Blue */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #003366; /* Slightly lighter blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Header styling - Override to maintain Michigan colors */
+.header {
+    background: #00274C; /* Solid Michigan Blue */
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.header h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+/* Term info styling with Michigan colors */
+.term-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.term-info li {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.term-info strong {
+    color: #4a5568;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 80px;
+    margin-right: 10px;
+}
+
+.term-definition {
+    font-style: italic;
+    color: #2d3748;
+    margin-top: 5px;
+    display: block;
+    padding-left: 90px; /* Align with other content */
+}
+
+.term-synonyms {
+    color: #2d3748;
+    word-break: break-word; /* Handle long synonym lists */
+}
+
+/* Links with Michigan blue */
+.term-info a {
+    color: #00274C; /* Michigan Blue */
+    text-decoration: none;
+}
+
+.term-info a:hover {
+    color: #FFCB05; /* Michigan Maize on hover */
+    text-decoration: underline;
+}
